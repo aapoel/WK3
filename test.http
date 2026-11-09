@@ -1,0 +1,41 @@
+### Get all cats
+GET http://localhost:3000/api/v1/cats
+
+### Get one cat
+GET http://localhost:3000/api/v1/cats/9592
+
+### Add a cat
+POST http://localhost:3000/api/v1/cats
+Content-Type: application/json
+
+{
+  "cat_name": "Luna",
+  "weight": 5,
+  "owner": 3609,
+  "filename": "luna.jpg",
+  "birthdate": "2022-03-01"
+}
+
+### Update a cat
+PUT http://localhost:3000/api/v1/cats/9592
+
+### Delete a cat
+DELETE http://localhost:3000/api/v1/cats/9592
+
+### Get all users
+GET http://localhost:3000/api/v1/users
+
+### Get one user
+GET http://localhost:3000/api/v1/users/3609
+
+### Add a user
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@metropolia.fi",
+  "role": "user",
+  "password": "secret"
+}
